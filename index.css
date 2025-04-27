@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Navbar Container */
+.navbarmain {
+  background: linear-gradient(135deg, #26c255 0%, #15af43 51%, #1bb06a 100%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.navbarmain .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbarmain .logo img {
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.navbarmain .logo h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+/* Navbar Links */
+.navbarmain .navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarmain .navbar ul li {
+  margin: 0 15px;
+}
+
+.navbarmain .navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.navbarmain .navbar ul li a:hover {
+  background-color: rgba(239, 235, 232, 0.273);
+  border-radius: 10px;
+}
+
+.hero {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.hero > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero .bgText {
+  position: absolute;
+  top: 300px;
+  margin-left: 12%;
+  font-size: 60px;
+  color: rgb(234, 226, 226);
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.hero .bgText {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.content {
+  width: 100%;
+  padding: 50px 20px;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  background-color: #f3f7f4;
+}
+
+.content h2 {
+  color: #2b8c4d;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Destinationshading {
+  width: 100%;
+  padding: 40px 0 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;;
+}
+
+.Destinationshading h2 {
+  text-align: center;
+  color: #2b8c4d;
+  position: relative;
+  font-size: 2rem;
+}
+
+.Destinationsimage {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.Destinationsimage div {
+  height: 300px;
+  width: 230px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.Destinationsimage div img {
+  width: 100%;
+  height: 55%;
+  border-radius: 10px 10px 0px 0px;
+  
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.Destinationsimage div:hover img {
+  transform: scale(1.02); /* Slight zoom effect */
+  
+}
+
+.Destinationsimage div h3 {
+  text-align: center;
+  color: #1bb06a;
+  padding-top: 5px;
+}
+
+.Destinationsimage div p {
+  text-align: center;
+  padding: 12px;
+}
+
+.Destinationsimage div:hover {
+  transform: scale(1.05);
+  transition: all 0.6s ease;
+}
+
+.JobCategoryhading {
+  width: 100%;
+  padding: 40px 0 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;;
+}
+
+.JobCategoryhading h2 {
+  text-align: center;
+  color: #2b8c4d;
+  position: relative;
+  font-size: 2rem;
+}
+
+.JobCategoryimage {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.JobCategoryimage div {
+  height: 300px;
+  width: 230px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.JobCategoryimage div img {
+  width: 100%;
+  height: 55%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+.JobCategoryimage div h3 {
+  text-align: center;
+  color: #1bb06a;
+  padding-top: 5px;
+}
+
+.JobCategoryimage div p {
+  text-align: center;
+  padding: 12px;
+}
+
+.JobCategoryimage div:hover {
+  transform: scale(1.05);
+  transition: all 0.6s ease;
+}
+
+.rnadomimg {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.rnadomimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #0f4c81;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+
+.footer-about h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ab664c;
+}
+
+.footer-social .social-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social .social-icon img.custom-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ffffff;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.lastsction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0f4c81;
+  border-top: 1px solid #e1e5eb;
+  text-align: center;
+}
+
+.button1,
+.button2 {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Login button specific styles */
+.button1 {
+  background-color: #1e5799;
+  color: white;
+  border: 2px solid #1e5799;
+}
+
+.button1:hover {
+  background-color: #15437a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 87, 153, 0.3);
+}
+
+/* Signup button specific styles */
+.button2 {
+  background-color: white;
+  color: #1e5799;
+  border: 2px solid #1e5799;
+}
+
+.button2:hover {
+  background-color: #f0f7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 87, 153, 0.2);
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px) {
+  .hero .bgText {
+    font-size: 50px;
+  }
+
+  .content h2,
+  .Destinationshading h2,
+  .JobCategoryhading h2 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbarmain .navbar ul li a {
+    font-size: 1.2em;
+  }
+
+  .hero .bgText {
+    font-size: 40px;
+    top: 250px;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .rnadomimg {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .navbarmain .navbar ul {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #26c255;
+    flex-direction: column;
+    padding: 20px 0;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 5;
+  }
+
+  .navbarmain .navbar ul.active {
+    transform: translateY(0);
+  }
+
+  .navbarmain .navbar ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .hero .bgText {
+    font-size: 30px;
+    top: 200px;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+  }
+
+  .content {
+    padding: 30px 15px;
+  }
+
+  .content h2,
+  .Destinationshading h2,
+  .JobCategoryhading h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .rnadomimg {
+    height: 300px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbarmain {
+    padding: 10px;
+  }
+
+  .navbarmain .logo img {
+    height: 40px;
+  }
+
+  .navbarmain .logo h1 {
+    font-size: 1.2em;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero .bgText {
+    font-size: 24px;
+    top: 150px;
+  }
+
+  .content h2,
+  .Destinationshading h2,
+  .JobCategoryhading h2 {
+    font-size: 1.3rem;
+  }
+
+  .Destinationsimage div,
+  .JobCategoryimage div {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rnadomimg {
+    height: 200px;
+  }
+
+  .lastsction {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button1,
+  .button2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbarmain .logo h1 {
+    font-size: 1em;
+  }
+
+  .navbarmain .logo img {
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  .hero .bgText {
+    font-size: 20px;
+    top: 130px;
+  }
+
+  .content h2,
+  .Destinationshading h2,
+  .JobCategoryhading h2 {
+    font-size: 1.2rem;
+  }
+}
